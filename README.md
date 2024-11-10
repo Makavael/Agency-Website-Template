@@ -10,11 +10,9 @@ Feel free to use the code, do remember to star as you do and in case of any issu
 
 <a href="https://successfullsites.github.io/Agency-Website/"><strong>➥ Live Demo</strong></a>
 
-## Demo Screeshots :
+## Created By 
+Eng: Ahmed Samir "Makavael" :
 
-![Website Thumnail](/Images/Thumbnail.png "Website Thumnail")
-
-![Website Thumnail](/Images/ResponsiveScreen-mockup.png "Website Thumnail")
 
 ## Usage
 
@@ -48,17 +46,17 @@ I'd love to see the sites you create using this little tool.
 
 ## Credits
 
-- Design by [@aravinddesign](https://www.figma.com/@aravinddesign) : https://www.figma.com/community/file/894552273937682724
+- Design by [@aravinddesign](https://www.figma.com/@Makavael) : https://www.figma.com/community/file/894552273937682724
 
 ## Author
 
-- [@ShivamSharma](https://github.com/imShivam579)
+- [@Makavael](https://github.com/Makavael)
 
 ## License
 This project is **free to use** and does not contains any license.
 
 ### Contact
 
-If you want to contact with me you can reach me at [Instagram](https://www.instagram.com/codingshiv/).
+If you want to contact with me you can reach me at [Telegram](https://www.T.me/Makavael).
 
 ## [ I appreciate if you give appropriate credit when using this Website for Commercial Use 💖🤗 ]
