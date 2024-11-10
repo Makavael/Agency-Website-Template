@@ -1,0 +1,588 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+/*** 
+
+====================================================================
+Global Settings
+====================================================================
+
+***/
+:root {
+  --primary-50: #f5f3ff;
+  --primary-100: #ede9fe;
+  --primary-300: #c4b5fd;
+  --primary-600: #7c3aed;
+  --primary-900: #4c1d95;
+  --secondary-50: #ecfeff;
+  --secondary-100: #d5fafc;
+  --secondary-300: #75e3ea;
+  --secondary-600: #1db5be;
+  --secondary-900: #2a4e51;
+  --neutral-50: #f9fafb;
+  --neutral-100: #f3f4f6;
+  --neutral-200: #e5e7eb;
+  --neutral-300: #d1d5db;
+  --neutral-400: #9ca3af;
+  --neutral-500: #6b7280;
+  --neutral-600: #4b5563;
+  --neutral-700: #374151;
+  --neutral-800: #1f2937;
+  --neutral-900: #111827;
+  --white: #ffffff;
+  --black: #000000;
+  /* font style  */
+  --fs-displayXL: 60px;
+  --fs-displayLG: 48px;
+  --fs-displayMD: 36px;
+  --fs-displaySM: 30px;
+  --fs-bodyLG: 18px;
+  --fs-bodyMD: 16px;
+  --fs-bodySM: 14px;
+  --lh-displayXL: 72px;
+  --lh-displayLG: 60px;
+  --lh-displayMD: 45px;
+  --lh-displaySM: 40px;
+  --lh-bodyLG: 28px;
+  --lh-bodyMD: 24px;
+  --lh-bodySM: 20px;
+}
+@media (max-width: 992px) {
+  :root {
+    /* font style  */
+    --fs-displayXL: 48px;
+    --fs-displayLG: 36px;
+    --fs-displayMD: 30px;
+    --fs-displaySM: 24px;
+    --lh-displayXL: 60px;
+    --lh-displayLG: 45px;
+    --lh-displayMD: 40px;
+    --lh-displaySM: 32px;
+  }
+}
+@media (max-width: 576px) {
+  :root {
+    /* font style  */
+    --fs-displayXL: 36px;
+    --fs-displayLG: 30px;
+    --fs-bodyLG: 16px;
+    --fs-bodyMD: 14px;
+    --lh-displayXL: 45px;
+    --lh-displayLG: 40px;
+    --lh-bodyLG: 24px;
+    -lh-bodymd: 20px;
+  }
+}
+/*** 
+
+====================================================================
+App Default Style
+====================================================================
+
+***/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+a:hover,
+a:focus,
+a:visited {
+  text-decoration: none;
+  outline: none;
+}
+/*** 
+
+====================================================================
+Button style's
+====================================================================
+
+***/
+button,
+.button {
+  text-align: center;
+  white-space: nowrap;
+  font-size: 15px;
+  line-height: 20px;
+  z-index: 1;
+  border-radius: 8px;
+  padding: 18px 35px 15px 35px;
+  position: relative;
+  transition: all 0.5s ease;
+  overflow: hidden;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-theme-default {
+  color: var(--primary-100);
+  background-color: var(--primary-600);
+}
+.btn-theme-default:hover {
+  color: var(--primary-100);
+  background-color: #562ba1;
+}
+.btn-theme-1 {
+  color: var(--primary-600);
+  background-color: var(--primary-100);
+}
+.btn-theme-1:hover {
+  color: var(--primary-100);
+  background-color: var(--primary-600);
+}
+.btn-theme-2 {
+  color: var(--primary-600);
+}
+.btn-theme-2:hover {
+  color: var(--primary-100);
+  background-color: var(--primary-600);
+}
+/*** 
+
+====================================================================
+Font Colour
+====================================================================
+
+***/
+.nav-item a,
+.text-body p,
+.text-body h2,
+#Herosection h1,
+#Features .container-body .text .title,
+#Features .container-body .text .description,
+.pricing-table .price {
+  color: var(--neutral-900);
+}
+#Herosection p {
+  color: var(--neutral-700);
+}
+#Testimonial .personal-detail .per-role,
+#FAQ .accordion-item .accordion-body,
+.pricing-table .price .duration {
+  color: var(--neutral-500);
+}
+#Pricing .inner-box .table-content ul li,
+.pricing-table .tag {
+  color: var(--primary-600);
+}
+#Pricing .inner-box .title {
+  color: var(--primary-900);
+}
+/*** 
+
+====================================================================
+Background Colour
+====================================================================
+
+***/
+.bg-primary-300 {
+  background-color: var(--primary-100);
+}
+.bg-secondary-100 {
+  background-color: var(--secondary-100);
+}
+.bg-secondary-600 {
+  background-color: var(--secondary-600);
+}
+.bg-neutral-50 {
+  background-color: var(--neutral-50);
+}
+/*** 
+
+====================================================================
+Typography - fontWeight
+====================================================================
+
+***/
+button,
+.button,
+.fw-light,
+.pricing-table .duration,
+.pricing-table .duration,
+.pricing-table .table-content ul li {
+  font-weight: 400;
+}
+#Footer a,
+.pricing-table .title,
+.pricing-table .price,
+.pricing-table .table-footer a {
+  font-weight: 500;
+}
+/*** 
+
+====================================================================
+Typography - fontSize/lineHeight/letterSpacing
+====================================================================
+
+***/
+#Herosection h1,
+h1 {
+  font-size: var(--fs-displayXL);
+  line-height: var(--lh-displayXL);
+  letter-spacing: -0.025em;
+}
+.text-body h2,
+h2 {
+  font-size: var(--fs-displayLG);
+  line-height: var(--lh-displayLG);
+  letter-spacing: -0.025em;
+}
+#Metric .content-item .title {
+  font-size: var(--fs-displayMD);
+  line-height: var(--lh-displayMD);
+  letter-spacing: -0.025em;
+}
+#Features .container-body .text .title,
+#Pricing .inner-box .price {
+  font-size: var(--fs-displaySM);
+  line-height: var(--lh-displaySM);
+}
+#Testimonial .personal-detail .per-name,
+#FAQ .accordion-item h2 button,
+.text-body p,
+.badges p {
+  font-size: var(--fs-bodyLG);
+  line-height: var(--lh-bodyLG);
+  font-weight: 400;
+}
+#Metric .content-item .Description,
+#Features .container-body .text .description,
+#Pricing .inner-box .title,
+#Pricing .inner-box .price span.duration,
+#Pricing .inner-box .table-content ul li,
+#Pricing .pricing-table .table-footer a {
+  font-size: var(--fs-bodyMD);
+  line-height: var(--lh-bodyMD);
+}
+#Testimonial .personal-detail .per-role,
+#FAQ .accordion-item .accordion-body,
+.pricing-table .tag,
+.nav-item a {
+  font-size: var(--fs-bodySM);
+  line-height: var(--lh-bodySM);
+}
+
+/*** 
+
+====================================================================
+Theme Style
+====================================================================
+
+***/
+#Herosection,
+#Features .container,
+#Pricing .container,
+.section .container,
+#FAQ,
+.testimonial-section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+#Features .text-body h1,
+#Features .text-body p,
+#Pricing .text-body h1,
+#Pricing .text-body p {
+  max-width: 800px;
+}
+/*** 
+
+====================================================================
+App
+====================================================================
+
+***/
+.app {
+  min-height: fit-content;
+  overflow-x: hidden;
+}
+/*** 
+
+====================================================================
+Navbar Section
+====================================================================
+
+***/
+#Navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  width: 100%;
+  overflow: hidden;
+}
+.nav-scrolled {
+  box-shadow: 0px 4px 8px -2px rgba(17, 24, 39, 0.1),
+    0px 2px 4px -2px rgba(17, 24, 39, 0.06);
+}
+.nav-item a {
+  font-weight: 600;
+}
+.nav-right {
+  width: fit-content;
+}
+.BrandLogo,
+.badge-item .item {
+  height: 35px;
+}
+/*** 
+
+====================================================================
+Hero Section
+====================================================================
+
+***/
+#Herosection .text-wrapper {
+  padding-top: 40px;
+}
+.mockup-img img {
+  max-height: 560px;
+}
+@media (min-width: 786px) {
+  #Herosection .text-wrapper {
+    padding-top: 64px;
+  }
+  .mockup-img img {
+    max-height: 640px;
+  }
+}
+@media (min-width: 992px) {
+  #Herosection .text-wrapper {
+    padding-top: 80px;
+  }
+}
+.hero-bg {
+  --band-right-offset: 0px;
+  --band-left-offset: 0px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.hero-bg .bg {
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  height: 100%;
+  background: rgba(242, 247, 255, 0.7);
+  backdrop-filter: blur(100px);
+}
+@media (min-width: 1200px) {
+  .hero-bg .bg {
+    width: 100%;
+  }
+}
+.hero-bg .purple-circle {
+  position: absolute;
+  width: 406px;
+  height: 406px;
+  right: -107px;
+  top: -37px;
+  z-index: -1;
+}
+.band {
+  position: absolute;
+  z-index: 1;
+}
+.hero-bg .left-bands {
+  bottom: 4%;
+  left: -152px;
+}
+.hero-bg .right-bands {
+  bottom: 33%;
+  right: -239px;
+}
+
+/*** 
+
+====================================================================
+LogoCloud Section
+====================================================================
+
+***/
+.ClientLogo img {
+  max-height: 26px;
+}
+/*** 
+
+====================================================================
+Pricing Table Section
+====================================================================
+
+***/
+.pricing-table {
+  margin-bottom: 30px;
+}
+
+.pricing-table .inner-box {
+  border: 1px solid var(--neutral-300);
+  border-radius: 8px;
+  transition: all 300ms ease;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+}
+.pricing-table .inner-box {
+  padding: 40px 40px;
+}
+.pricing-table .inner-box:hover,
+.pricing-table.tagged .inner-box {
+  border: 1px solid var(--primary-600);
+  box-shadow: 0px 6px 15px rgba(64, 79, 104, 0.05);
+}
+.pricing-table .tag {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  overflow: hidden;
+  border-radius: 30px;
+  padding: 5px 25px;
+}
+.pricing-table .tag:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.15;
+  content: "";
+  border-radius: 30px;
+}
+.pricing-table .title {
+  display: block;
+  margin-bottom: 10px;
+}
+.pricing-table .price {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 50px;
+  transition: all 300ms ease;
+}
+.pricing-table .duration {
+  position: relative;
+  font-size: 18px;
+  line-height: 1em;
+  bottom: 7px;
+  margin-left: 7px;
+}
+.pricing-table .table-content {
+  position: relative;
+  margin-bottom: 60px;
+}
+.pricing-table .table-content ul {
+  position: relative;
+}
+.pricing-table .table-content ul li {
+  position: relative;
+  margin-bottom: 20px;
+  padding-left: 30px;
+  list-style: none;
+}
+.pricing-table .table-content ul li i {
+  font-size: 1.3rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.pricing-table .table-footer {
+  position: relative;
+}
+.pricing-table .table-footer a {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+.pricing-table .table-footer a {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+/*** 
+
+====================================================================
+Testimonial Section
+====================================================================
+
+***/
+#Testimonial .testimonial-item {
+  height: fit-content;
+  padding: 32px 24px;
+  box-shadow: 0px 4px 8px -2px rgba(17, 24, 39, 0.1),
+    0px 2px 4px -2px rgba(17, 24, 39, 0.06);
+}
+#Testimonial h1,
+#Testimonial p {
+  max-width: 488px;
+}
+#Testimonial .testimonial-items,
+#Testimonial .testimonial-items .item-1 {
+  margin-top: 120px;
+}
+#Testimonial .text-body {
+  top: -80px;
+  left: 0;
+  z-index: 4;
+}
+#Testimonial .text-body .quote-mark {
+  z-index: -1;
+  top: -60px;
+  left: -48px;
+}
+/*** 
+
+====================================================================
+FAQ Section
+====================================================================
+
+***/
+.accordion-button:not(.collapsed) {
+  color: var(--primary-600);
+  background-color: var(--primary-100);
+}
+.accordion-button:focus {
+  border-color: var(--primary-600);
+  box-shadow: 0 0 0 0.25rem var(--primary-300);
+}
+/*** 
+
+====================================================================
+Footer Section
+====================================================================
+
+***/
+#Footer {
+  background-color: var(--black);
+}
+#Footer a {
+  color: var(--white);
+  padding-left: 0px;
+}
+#Footer a:hover {
+  color: var(--secondary-300);
+}
+/*** 
+
+====================================================================
+ArrowToTop Section
+====================================================================
+
+***/
+.arrow-back-to {
+  font-size: 1.2rem;
+  position: fixed;
+  width: 42px;
+  height: 42px;
+  right: 40px;
+  bottom: 80px;
+  mix-blend-mode: normal;
+  filter: drop-shadow(0px 4px 4px rgba(19, 56, 77, 0.03));
+  cursor: pointer;
+  transition: all 0.5s ease;
+  z-index: 20;
+}
