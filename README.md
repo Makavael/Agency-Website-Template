@@ -46,7 +46,7 @@ I'd love to see the sites you create using this little tool.
 
 ## Credits
 
-- Design by [@aravinddesign](https://www.figma.com/@Makavael) : https://www.figma.com/community/file/894552273937682724
+- Design by [@Makavael](https://www.figma.com/@Makavael) : https://www.figma.com/community/file/894552273937682724
 
 ## Author
 
